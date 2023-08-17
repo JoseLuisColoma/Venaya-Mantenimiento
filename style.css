@@ -1,0 +1,340 @@
+/* Reset estilos por defecto */
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+		}
+
+		body, html {
+			font-family: 'Railway', sans-serif;
+			margin: 0;
+			padding: 0;
+			line-height: 1.2;
+		}
+
+		h1, h2, h3, p {
+			margin: 0;
+			font-weight: 400;
+		}
+
+		a {
+			text-decoration: none;
+			color: whitesmoke;
+		}
+
+		.c-coverPage {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-image: url(/assets/img/background.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.c-coverPage::before {
+			content: '';
+			display: block;
+			position: absolute;
+			background: black;
+			opacity: .6;
+			width: 100vw;
+			height: 100vh;
+			top: 0;
+		}
+
+		.c-logo-image {
+			width: 300px;
+			height: auto;
+			opacity: .8;
+			margin: auto;
+		}
+
+		.c-coverPage-content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: whitesmoke;
+			height: 60%;
+			width: 78%;
+			z-index: 1000;
+			text-align: center;
+			opacity: .8;
+			padding: 1em;
+		}
+
+		.c-coverPage-content h2 {
+			font-size: 28px;
+			margin-top: 1em;
+			margin-bottom: 1.8em;
+			color: #b3e9a6;
+		}
+
+		.c-coverPage-content h3 {
+			font-size: 1em;
+			margin-bottom: 1.5rem;
+			opacity: .8;
+			text-transform: uppercase;
+			font-weight: 600;
+			width: auto;
+		}
+
+		.c-coverPage-content p {
+			font-size: 1em;
+			margin-bottom: 2em;
+			line-height: 1.5;
+			opacity: .8;
+		}
+
+		.c-socialIcon {
+			margin-right: 10px;
+			opacity: .8;
+		}
+
+		.c-socialIcon i {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			border: 2px solid whitesmoke;
+			border-radius: 100%;
+			padding: 24px;
+			height: 25px;
+			width: 25px;
+			transition: all .3s;
+		}
+
+		.c-socialIcon i:hover {
+			color: #b3e9a6;
+			border-color: #b3e9a6;
+		}
+
+		.c-button {
+			cursor: pointer;
+			background-color: transparent;
+			border: 2px solid whitesmoke;
+			width: fit-content;
+			display: block;
+			padding: 8px 18px;
+			font-size: 14px;
+			color: whitesmoke;
+			position: relative;
+			z-index: 10;
+			border-radius: 6px;
+		}
+
+		.c-button:hover {
+			cursor: pointer;
+			background-color: transparent;
+			border: 2px solid #b3e9a6;
+			color: #b3e9a6;
+			width: fit-content;
+			display: block;
+			padding: 8px 18px;
+			font-size: 14px;
+			position: relative;
+			z-index: 10;
+			border-radius: 6px;
+		}
+
+		.c-posicionBotones {
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+			margin-top: 40px;
+			margin-right: 35px;
+		}
+
+
+/* Estilos para iPads y tablets */
+@media (min-width: 768px) {
+
+	.c-logo-image {
+		width: 400px;
+	}
+
+	.c-coverPage-content h2 {
+		font-size: 40px;
+		margin-top: 0.4em;
+		margin-bottom: 1em;
+		color: #b3e9a6;
+	}
+
+	.c-coverPage-content h3 {
+		font-size: 1em;
+		margin-bottom: 1.5rem;
+		opacity: .8;
+		text-transform: uppercase;
+		font-weight: 600;
+		width: auto;
+	}
+
+	.c-coverPage-content p {
+		font-size: 1.2em;
+		margin-bottom: 1.5em;
+		line-height: 1.5;
+		opacity: .8;
+		width: 80%;
+	}
+
+	.c-socialIcon {
+		margin-right: 30px;
+		opacity: .8;
+	}
+
+	.c-socialIcon i {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 32px;
+		border: 2px solid whitesmoke;
+		border-radius: 100%;
+		padding: 32px;
+		height: 36px;
+		width: 36px;
+		transition: all .3s;
+	}
+
+	.c-socialIcon i:hover {
+		color: #b3e9a6;
+		border-color: #b3e9a6;
+	}
+
+	.c-socialIcon_mail{
+		margin-left: 20px;
+	}
+
+	.c-button {
+		cursor: pointer;
+		background-color: transparent;
+		border: 2px solid whitesmoke;
+		width: fit-content;
+		display: block;
+		padding: 8px 18px;
+		font-size: 22px;
+		color: whitesmoke;
+		position: relative;
+		z-index: 10;
+		border-radius: 6px;
+	}
+
+	.c-button:hover {
+		cursor: pointer;
+		background-color: transparent;
+		border: 2px solid #b3e9a6;
+		color: #b3e9a6;
+		width: fit-content;
+		display: block;
+		padding: 8px 18px;
+		font-size: 22px;
+		position: relative;
+		z-index: 10;
+		border-radius: 6px;
+	}
+
+	.c-posicionBotones {
+		display: flex;
+		justify-content: center;
+		gap: 50px;
+		margin-top: 50px;
+		margin-right: 75px;
+		width: 100%;
+	}
+
+}
+
+/* Estilos para escritorios */
+/*
+@media (min-width: 1024px) {
+
+	.c-logo-image {
+		width: 500px;
+	}
+
+	.c-coverPage-content h2 {
+		font-size: 48px;
+		margin-top: 0.3em;
+		margin-bottom: 0.8em;
+		color: #b3e9a6;
+	}
+
+	.c-coverPage-content h3 {
+		font-size: 1.5em;
+		margin-bottom: 1.5rem;
+		opacity: .8;
+		text-transform: uppercase;
+		font-weight: 600;
+		width: auto;
+	}
+
+	.c-coverPage-content p {
+		font-size: 1.4em;
+		margin-bottom: 1.2em;
+		line-height: 1.5;
+		opacity: .8;
+	}
+
+	.c-socialIcon {
+		margin-right: 40px;
+		opacity: .8;
+	}
+
+	.c-socialIcon i {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 40px;
+		border: 2px solid whitesmoke;
+		border-radius: 100%;
+		padding: 40px;
+		height: 44px;
+		width: 44px;
+		transition: all .3s;
+	}
+
+	.c-socialIcon i:hover {
+		color: #b3e9a6;
+		border-color: #b3e9a6;
+	}
+
+	.c-button {
+		cursor: pointer;
+		background-color: transparent;
+		border: 2px solid whitesmoke;
+		width: fit-content;
+		display: block;
+		padding: 8px 18px;
+		font-size: 28px;
+		color: whitesmoke;
+		position: relative;
+		z-index: 10;
+		border-radius: 6px;
+	}
+
+	.c-button:hover {
+		cursor: pointer;
+		background-color: transparent;
+		border: 2px solid #b3e9a6;
+		color: #b3e9a6;
+		width: fit-content;
+		display: block;
+		padding: 8px 18px;
+		font-size: 22px;
+		position: relative;
+		z-index: 10;
+		border-radius: 6px;
+	}
+
+	.c-posicionBotones {
+		display: flex;
+		justify-content: center;
+		gap: 60px;
+		margin-top: 50px;
+		margin-right: 100px;
+		width: 100%;
+
+	}
+
+}
+*/
